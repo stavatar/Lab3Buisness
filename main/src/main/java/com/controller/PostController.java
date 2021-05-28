@@ -20,6 +20,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import javax.jms.TextMessage;
 import javax.servlet.ServletException;
 import java.util.List;
 @Tag(name = "PostController", description = "Содержит методы для работы с постами")
@@ -93,11 +94,16 @@ public class PostController
 
         if(checkPermission)
         {
-               deleted = postService.delete(postService.get(id));
+            jmsTemplate.send("deleteObject.topic", session -> {
+                TextMessage message1 = session.createTextMessage();
+                message1.setText("send");
+                message1.setStringProperty("loginUser",SecurityRolesManager.getNameCurrentUser());
+                message1.setStringProperty("nameObject","Post");
+                message1.setIntProperty("id",id);
+                return message1;
+            });
+            return  new ResponseEntity<>(HttpStatus.OK);
 
-            return deleted
-                    ? new ResponseEntity<>(HttpStatus.OK)
-                    : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
         } else   return   new ResponseEntity<>(HttpStatus.FORBIDDEN);
     }
     @PutMapping(value = "/user/post{id}/update/")

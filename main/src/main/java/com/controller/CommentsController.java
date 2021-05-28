@@ -15,8 +15,10 @@ import lombok.extern.java.Log;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.web.bind.annotation.*;
 
+import javax.jms.TextMessage;
 import java.util.List;
 import java.util.Optional;
 @Tag(name = "CommentsController", description = "Содержит методы для работы с комментариями")
@@ -31,7 +33,8 @@ public class CommentsController
     private UserService userService;
     @Autowired
     private CommentService commentService;
-
+    @Autowired
+    private JmsTemplate jmsTemplate;
     @GetMapping(value = "/user/comments_all/")
     @Operation(summary = "Вывод всех комментариев")
     public ResponseEntity<List<Comments>> readAll()
@@ -82,9 +85,6 @@ public class CommentsController
     @Operation(summary = "Удалить комментарий")
     public  ResponseEntity<?>  delete(@PathVariable(name = "id") int id)
     {
-
-        boolean deleted;
-
         boolean checkPermission;
         if (userService.containComment(SecurityRolesManager.getNameCurrentUser(),id))
             checkPermission = SecurityRolesManager.checkPermission(ActionType.DELETE_YOUR_COMMENTS);
@@ -92,10 +92,15 @@ public class CommentsController
 
        if (checkPermission)
         {
-            deleted =commentService.delete(commentService.get(id));
-                return deleted
-                        ? new ResponseEntity<>(HttpStatus.OK)
-                        : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+            jmsTemplate.send("deleteObject.topic", session -> {
+                TextMessage message1 = session.createTextMessage();
+                message1.setText("send");
+                message1.setStringProperty("loginUser",SecurityRolesManager.getNameCurrentUser());
+                message1.setStringProperty("nameObject","Comment");
+                message1.setIntProperty("id",id);
+                return message1;
+            });
+                return new ResponseEntity<>(HttpStatus.OK);
         } else   return   new ResponseEntity<>(HttpStatus.FORBIDDEN);
 
     }

@@ -1,4 +1,4 @@
-package com.example.LabOneBusinessLogic.controller.util;
+package com.controller.util;
 
 import lombok.Data;
 

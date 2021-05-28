@@ -4,9 +4,9 @@ package com.controller;
 import com.Security.jwt.JwtProvider;
 import com.entity.Users;
 
-import com.example.LabOneBusinessLogic.controller.util.AuthRequest;
-import com.example.LabOneBusinessLogic.controller.util.AuthResponse;
-import com.example.LabOneBusinessLogic.controller.util.RegistrationRequest;
+import com.controller.util.AuthRequest;
+import com.controller.util.AuthResponse;
+import com.controller.util.RegistrationRequest;
 
 import com.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -20,6 +20,8 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.ServletException;
 import javax.transaction.Transactional;
 import javax.validation.Valid;
+import java.time.LocalDate;
+
 @Tag(name = "AuthController", description = "Содержит методы регистрации и авторизации")
 
 @RestController
@@ -40,20 +42,20 @@ public class AuthController
         log.info("Логин"+registrationRequest.getLogin());
         u.setPassword(registrationRequest.getPassword());
         u.setLogin(registrationRequest.getLogin());
-
+        u.setLastdate(LocalDate.now());
         userService.createUser(u);
         return "OK";
     }
 
     @PostMapping("/auth/")
     @Operation(summary = "Авторизация")
-    public AuthResponse auth(@RequestBody AuthRequest request ) throws ServletException {
-
-
+    public AuthResponse auth(@RequestBody AuthRequest request ) throws ServletException
+    {
         Users userEntity = userService.findByLoginAndPassword(request.getLogin(), request.getPassword());
         String token = jwtProvider.generateToken(userEntity.getLogin());
         log.info("Токен = "+token);
-
+        userEntity.setLastdate(LocalDate.now());
+        userService.save(userEntity);
         return new AuthResponse(token);
     }
 }

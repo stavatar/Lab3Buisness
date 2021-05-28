@@ -3,14 +3,7 @@ package com;
 import bitronix.tm.BitronixTransactionManager;
 import bitronix.tm.TransactionManagerServices;
 import bitronix.tm.resource.jdbc.PoolingDataSource;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder;
 import org.springframework.context.annotation.*;
-import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionDefinition;
-import org.springframework.transaction.TransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.jta.JtaTransactionManager;
 import org.springframework.transaction.support.TransactionTemplate;
@@ -42,7 +35,7 @@ public class DbConfig
         ds.init();
         return ds;
     }
-    @Bean(destroyMethod = "shutdown")
+    @Bean(name="bitronixManager",destroyMethod = "shutdown")
     public BitronixTransactionManager bitronixManager() {
         return TransactionManagerServices.getTransactionManager();
     }
@@ -56,7 +49,7 @@ public class DbConfig
         jtaTransactionManager=jta;
         return jta;
     }
-    @Bean
+    @Bean(name="transactionTemplate")
     public TransactionTemplate transactionTemplate() {
         TransactionTemplate transactionTemplate= new TransactionTemplate(jtaTransactionManager());
         return transactionTemplate;

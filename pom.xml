@@ -15,8 +15,6 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <modules>
-        <module>api</module>
-        <module>client</module>
         <module>main</module>
     </modules>
     <dependencies>

@@ -40,6 +40,8 @@ public class UserService
     private PasswordEncoder passwordEncoder;
     public Users createUser(Users userEntity)
     {
+        if(usersRepository.findByLogin(userEntity.getLogin())!=null)
+            return null;
         return (Users) transactionTemplate.execute(new TransactionCallback() {
             public Object doInTransaction(TransactionStatus status) {
                 Position userRole = positionRepository.findByName(RoleType.ROLE_USER_BASED);
@@ -112,25 +114,7 @@ public class UserService
                 return Boolean.FALSE;
             }});
     }
-    public boolean delete(int  id)
-    {
-        return (boolean) transactionTemplate.execute(new TransactionCallback() {
-            public Boolean doInTransaction(TransactionStatus status) {
-                if (usersRepository.existsById((long) id)) {
-                    Users user = (Users) usersRepository.findById((long) id).get();
-                    user.getListPost().forEach(posts -> {
-                        posts.setOwner(null);
-                        postService.save(posts);
-                    });
-                    user.getListComment().forEach(comments -> {
-                        comments.setOwner(null);
-                        commentService.save(comments);
-                    });
-                    usersRepository.delete(user);
-                    return true;
-                } else return false;
-            }});
-    }
+
     public Users findByLoginAndPassword(String login, String password) {
         Users userEntity = findByLogin(login);
         if (userEntity != null)

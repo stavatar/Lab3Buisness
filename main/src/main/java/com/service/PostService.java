@@ -137,18 +137,7 @@ public class PostService
                 return false;
             }});
     }
-    public boolean delete(Posts post)
-    {
-        return (boolean) transactionTemplate.execute(new TransactionCallback() {
-            public Object doInTransaction(TransactionStatus status) {
-                if (postsRepository.existsById(post.getId())) {
-                    post.setOwner(null);
-                    postsRepository.delete(post);
-                    return true;
-                }
-                return false;
-            }});
-    }
+
     public  Posts get(int id)
     {
         return  postsRepository.findById((long) id).get();

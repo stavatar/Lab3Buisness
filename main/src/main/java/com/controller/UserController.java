@@ -1,7 +1,8 @@
 package com.controller;
 
 
-import api.ActiveMQ.RequestMes;
+
+import com.ActiveMQ.RequestMes;
 import com.Security.Manager.ActionType;
 import com.Security.Manager.SecurityRolesManager;
 import com.entity.Users;
@@ -61,11 +62,12 @@ public class UserController
         else checkPermission =  SecurityRolesManager.checkPermission(ActionType.DELETE_ALIEN_USER);
         if (checkPermission)
         {
-            RequestMes mes=new RequestMes( SecurityRolesManager.getNameCurrentUser(), "User",delete_user_id);
-           // jmsTemplate.convertAndSend("deleteObject.topic",mes);
             jmsTemplate.send("deleteObject.topic", session -> {
                 TextMessage message1 = session.createTextMessage();
                 message1.setText("send");
+                message1.setStringProperty("loginUser",SecurityRolesManager.getNameCurrentUser());
+                message1.setStringProperty("nameObject","User");
+                message1.setIntProperty("id",delete_user_id);
                 return message1;
             });
 

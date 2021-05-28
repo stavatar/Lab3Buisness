@@ -1,6 +1,6 @@
 package com.JMS;
 
-import api.ActiveMQ.Producer;
+import com.ActiveMQ.Producer;
 
 public class SenderMessage
 {

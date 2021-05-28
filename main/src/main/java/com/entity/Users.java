@@ -8,6 +8,7 @@ import org.hibernate.annotations.FetchMode;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -31,6 +32,16 @@ public class Users implements Serializable {
     @Column(name = "password")
     private String password;
 
+    public LocalDate getLastdate() {
+        return lastdate;
+    }
+
+    public void setLastdate(LocalDate lastdate) {
+        this.lastdate = lastdate;
+    }
+
+    @Column(name = "lastdate")
+    private LocalDate lastdate;
     @ManyToOne( cascade = CascadeType.REFRESH)
     @JoinColumn(name = "position_id")
     private Position position;
