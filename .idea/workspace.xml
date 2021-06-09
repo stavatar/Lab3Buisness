@@ -2,86 +2,68 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec8ac73c-1300-4f0c-b3da-f700d105312b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/JpaSupport.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/src/main/java/com/JmsConfig2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/api/ActiveMQ/AnswerMes.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/ActiveMQ/AnswerMes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/api/ActiveMQ/MessageType.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/ActiveMQ/MessageType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/api/ActiveMQ/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/ActiveMQ/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/api/ActiveMQ/RequestMes.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/ActiveMQ/RequestMes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/api/ActiveMQ/AnswerMes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/api/ActiveMQ/MessageType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/api/ActiveMQ/Producer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/target/classes/api/ActiveMQ/RequestMes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/btm1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/btm1.tlog" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/DeleteObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/LabOneBusinessLogicApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/Listener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/com/DeleteObject.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/com/LabOneBusinessLogicApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/com/Listener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/DbConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/JMS/SenderMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/JMS/SenderMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/LabOneBusinessLogicApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/LabOneBusinessLogicApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/Listener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/Security/Jaas/JaasLoginModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/Security/Jaas/JaasLoginModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/controller/CommentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/controller/CommentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/src/main/java/com/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/controller/util/AuthRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/controller/util/AuthRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/controller/util/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/controller/util/AuthResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/controller/util/RegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/controller/util/RegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/entity/Comments.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/entity/Comments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/src/main/java/com/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/repository/CommentsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/repository/CommentsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/repository/PositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/repository/PositionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/repository/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/repository/PostsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/repository/UsersRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/repository/UsersRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/service/CommentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/service/CommentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/service/PostService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/main/java/com/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/main/java/com/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/DbConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/DbConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/JMS/SenderMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/JMS/SenderMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/LabOneBusinessLogicApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/LabOneBusinessLogicApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Jaas/JaasLoginModule.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/Security/Jaas/JaasLoginModule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/controller/AuthController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/CommentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/controller/CommentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/controller/PostController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/entity/Users.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/entity/Users.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/example/LabOneBusinessLogic/controller/MainController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/example/LabOneBusinessLogic/controller/util/AuthRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/example/LabOneBusinessLogic/controller/util/AuthResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/example/LabOneBusinessLogic/controller/util/RegistrationRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/repository/CommentsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/repository/CommentsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/repository/PositionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/repository/PositionRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/repository/PostsRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/repository/PostsRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/repository/UsersRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/repository/UsersRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/CommentService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/service/CommentService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/CommentService$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/CommentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/service/CommentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/PostService$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/service/PostService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/service/UserService$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/service/UserService$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/service/UserService$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/main/target/classes/com/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/btm1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/btm2.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/ActiveMQ/AnswerMes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/ActiveMQ/MessageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/ActiveMQ/Producer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/ActiveMQ/RequestMes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/DbConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/JMS/SenderMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/JmsConfig2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/LabOneBusinessLogicApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Listener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Filters/JaasStartFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Jaas/JaasAuthorityGranter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Jaas/JaasLoginModule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Jaas/JaasPrincipal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Manager/ActionType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Manager/RoleType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Manager/SecurityRolesManager$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Manager/SecurityRolesManager$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Manager/SecurityRolesManager$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Manager/SecurityRolesManager$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/Manager/SecurityRolesManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/Security/jwt/JwtProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/config/Security/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/CommentsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/MainController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/PositionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/PostController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/util/AuthRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/util/AuthResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/controller/util/RegistrationRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/entity/Comments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/entity/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/entity/Posts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/entity/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/repository/CommentsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/repository/PositionRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/repository/PostsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/repository/UsersRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/CommentService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/PositionService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/PostService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/PostService$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/PostService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/classes/com/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/main-2.5.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/main-2.5.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,6 +233,13 @@
       <workItem from="1621532930594" duration="4258000" />
       <workItem from="1621560599943" duration="7877000" />
       <workItem from="1621934231543" duration="2277000" />
+      <workItem from="1622545575204" duration="877000" />
+      <workItem from="1622589558950" duration="3471000" />
+      <workItem from="1622659109038" duration="6163000" />
+      <workItem from="1622781242703" duration="1615000" />
+      <workItem from="1623075383775" duration="3430000" />
+      <workItem from="1623183206326" duration="2998000" />
+      <workItem from="1623237949415" duration="5838000" />
     </task>
     <servers />
   </component>
@@ -270,18 +259,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="249" y="53" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1621530177312" />
-    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser" timestamp="1621530509959">
+    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser" timestamp="1623075609313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1621530509959" />
+    <state x="488" y="58" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1623075609313" />
     <state x="352" y="294" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1621461535006">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="294" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1621461535006" />
-    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1621564505857">
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1622716556793">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1621564505857" />
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1622716556793" />
     <state width="1323" height="59" key="GridCell.Tab.0.bottom" timestamp="1621611783460">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -342,10 +331,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="530" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1621529818530" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1621560671628">
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1622781505706">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1621560671628" />
+    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1622781505706" />
     <state x="325" y="69" key="new project wizard" timestamp="1621512634742">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

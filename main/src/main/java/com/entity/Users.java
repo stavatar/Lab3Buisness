@@ -16,8 +16,6 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "users")
-
-
 public class Users implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -32,13 +30,6 @@ public class Users implements Serializable {
     @Column(name = "password")
     private String password;
 
-    public LocalDate getLastdate() {
-        return lastdate;
-    }
-
-    public void setLastdate(LocalDate lastdate) {
-        this.lastdate = lastdate;
-    }
 
     @Column(name = "lastdate")
     private LocalDate lastdate;
@@ -66,6 +57,13 @@ public class Users implements Serializable {
     @Fetch(value = FetchMode.SUBSELECT)
     private List<Comments> listComment;
 
+    public LocalDate getLastdate() {
+        return lastdate;
+    }
+
+    public void setLastdate(LocalDate lastdate) {
+        this.lastdate = lastdate;
+    }
     public Users(Long id, String login, String password, Position position, Map<Posts, Boolean> listlike, List<Posts> listPost, List<Comments> listComment) {
         this.id = id;
         this.login = login;

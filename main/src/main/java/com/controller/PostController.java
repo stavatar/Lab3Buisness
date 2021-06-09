@@ -96,6 +96,7 @@ public class PostController
         {
             jmsTemplate.send("deleteObject.topic", session -> {
                 TextMessage message1 = session.createTextMessage();
+                
                 message1.setText("send");
                 message1.setStringProperty("loginUser",SecurityRolesManager.getNameCurrentUser());
                 message1.setStringProperty("nameObject","Post");
